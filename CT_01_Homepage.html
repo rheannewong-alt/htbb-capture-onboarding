@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTBB Capture Team — Onboarding</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <span class="nav-logo">HTBB · Capture Team</span>
+    <div class="nav-links">
+      <a href="#modules">Modules</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="eyebrow">
+      <span class="eyebrow-line"></span>
+      <span class="eyebrow-text">Capture Team · 2026</span>
+    </div>
+    <h1>Welcome to the<br><em>Capture Team.</em></h1>
+    <p class="hero-sub">Everything you need to start serving with your camera at HTBB — from your first Sunday to your shot list, all in one place.</p>
+    <div class="stat-row">
+      <div>
+        <div class="stat-num">6</div>
+        <div class="stat-label">Modules</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Quizzes</div>
+      </div>
+      <div>
+        <div class="stat-num">~40</div>
+        <div class="stat-label">Minutes</div>
+      </div>
+      <div>
+        <div class="stat-num" id="completed-count">0</div>
+        <div class="stat-label">Completed</div>
+      </div>
+    </div>
+    <a class="cta-btn" href="CT_02_Module1.html">Start Course &nbsp;→</a>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <!-- REPLACE: swap the div below with <img src="your-photo.jpg" alt="HTBB Capture Team" style="width:100%;height:220px;object-fit:cover;"> -->
+  <div class="img-placeholder wide" style="margin:0 28px;height:200px;">
+    <div class="img-placeholder-bg"></div>
+    <span class="img-placeholder-label">Add a hero photo here</span>
+    <span class="img-placeholder-hint">e.g. team photo or a Sunday service wide shot</span>
+  </div>
+
+  <!-- WELCOME NOTE -->
+  <div class="divider" style="margin-top:36px">
+    <span class="div-line"></span>
+    <span class="div-text">A note from the team</span>
+    <span class="div-line"></span>
+  </div>
+
+  <div class="welcome-block">
+    <p>Hey! Welcome to the HTBB Capture Team. We're so glad you're here. This course is your one-stop resource before your first Sunday on duty — take it at your own pace, and don't hesitate to reach out if you have questions.</p>
+    <p>We believe that great photography serves the church. Every photo you take is a chance to show people what it looks like to be loved and welcomed at HTBB.</p>
+    <span class="welcome-sig">— The HTBB Team</span>
+  </div>
+
+  <!-- MODULES -->
+  <div class="divider" id="modules">
+    <span class="div-line"></span>
+    <span class="div-text">What's covered</span>
+    <span class="div-line"></span>
+  </div>
+
+  <div>
+    <a class="module-card" href="CT_02_Module1.html">
+      <span class="mc-num">01</span>
+      <div>
+        <span class="mc-tag">Foundation</span>
+        <div class="mc-title">Who We Are &amp; Our Vision</div>
+        <div class="mc-desc">HTBB's identity, the HTB Network, and the capture team's place in the church</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+    <a class="module-card" href="CT_03_Module2.html">
+      <span class="mc-num">02</span>
+      <div>
+        <span class="mc-tag">Purpose</span>
+        <div class="mc-title">Our Goal &amp; Vibe</div>
+        <div class="mc-desc">What great church photography looks like, and why people are always at the heart of every capture</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+    <a class="module-card" href="CT_04_Module3.html">
+      <span class="mc-num">03</span>
+      <div>
+        <span class="mc-tag mc-tag-tc">Technical · Quiz</span>
+        <div class="mc-title">Camera &amp; Shooting Primer</div>
+        <div class="mc-desc">RAW format, Sony Alpha II, manual vs auto, Lightroom presets, low-light settings</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+    <a class="module-card" href="CT_05_Module4.html">
+      <span class="mc-num">04</span>
+      <div>
+        <span class="mc-tag">Conduct · Quiz</span>
+        <div class="mc-title">Guidelines &amp; Do's &amp; Don'ts</div>
+        <div class="mc-desc">Dress code, consent, prayer ministry, respectful visibility on Sundays</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+    <a class="module-card" href="CT_06_Module5.html">
+      <span class="mc-num">05</span>
+      <div>
+        <span class="mc-tag">Logistics</span>
+        <div class="mc-title">What to Expect on Sundays</div>
+        <div class="mc-desc">8:40am arrival, Planning Center, shot list briefing, and the Sunday schedule</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+    <a class="module-card" href="CT_07_Module6.html">
+      <span class="mc-num">06</span>
+      <div>
+        <span class="mc-tag mc-tag-tc">Workflow · Quiz</span>
+        <div class="mc-title">Photos, Copyright &amp; FAQ</div>
+        <div class="mc-desc">Selecting your best 20–30, Lightroom presets, copyright rules, and common Q&amp;As</div>
+      </div>
+      <span class="mc-arrow">›</span>
+    </a>
+  </div>
+
+  <div style="height:40px"></div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', updateHomepageStats);
+  </script>
+</body>
+</html>
