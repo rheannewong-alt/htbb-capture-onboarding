@@ -251,7 +251,16 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       updateDots(6);
-      initFAQ();
+
+      // FAQ accordion
+      document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
 
       const q1opts = document.querySelectorAll('#q6-1-opts .quiz-opt');
       const q2opts = document.querySelectorAll('#q6-2-opts .quiz-opt');
