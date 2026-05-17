@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're in — HTBB Capture Team</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .complete-hero {
+      background: var(--dark-brown);
+      padding: 56px 28px 40px;
+      text-align: center;
+    }
+    .complete-mark {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 1.5px solid var(--terracotta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 22px;
+    }
+    .complete-eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .complete-hero h1 {
+      font-family: var(--font-serif);
+      font-size: 34px;
+      line-height: 1.2;
+      color: var(--off-white);
+      margin-bottom: 14px;
+    }
+    .complete-hero h1 em {
+      color: var(--terracotta);
+      font-style: italic;
+    }
+    .complete-hero p {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--warm-mid);
+      font-weight: 300;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    .next-steps {
+      padding: 32px 28px;
+    }
+    .next-step-card {
+      display: grid;
+      grid-template-columns: 44px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 18px 0;
+      border-bottom: 0.5px solid var(--rule);
+    }
+    .next-step-card:last-child { border-bottom: none; }
+    .step-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--off-white);
+      border: 0.5px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-icon.active-icon {
+      background: var(--terracotta);
+      border-color: var(--terracotta);
+    }
+    .ns-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--dark-brown);
+      margin-bottom: 4px;
+    }
+    .ns-desc {
+      font-size: 12px;
+      line-height: 1.65;
+      color: var(--warm-brown);
+      font-weight: 300;
+    }
+    .closing-note {
+      background: var(--sand);
+      margin: 0 28px;
+      border-radius: 5px;
+      padding: 22px;
+      text-align: center;
+    }
+    .closing-note p {
+      font-size: 13px;
+      line-height: 1.75;
+      color: var(--warm-brown);
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    .closing-sig {
+      font-family: var(--font-serif);
+      font-size: 16px;
+      color: var(--dark-brown);
+      font-style: italic;
+    }
+    .action-row {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn-full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--dark-brown);
+      color: var(--cream);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn-full:hover { opacity: 0.85; }
+    .btn-full-outline {
+      background: transparent;
+      border: 0.5px solid var(--rule);
+      color: var(--warm-brown);
+    }
+    .modules-summary {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0;
+      border: 0.5px solid var(--rule);
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 0 28px 32px;
+    }
+    .ms-cell {
+      padding: 12px 10px;
+      border-right: 0.5px solid var(--rule);
+      text-align: center;
+    }
+    .ms-cell:last-child { border-right: none; }
+    .ms-num {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      color: var(--dark-brown);
+      line-height: 1;
+    }
+    .ms-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--warm-mid);
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <span class="nav-logo">HTBB · Capture Team</span>
+    <div class="nav-links">
+      <a href="CT_01_Homepage.html">Home</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="complete-hero">
+    <div class="complete-mark">✓</div>
+    <div class="complete-eyebrow">Course complete</div>
+    <h1>You're officially<br><em>on the team.</em></h1>
+    <p>You've completed the HTBB Capture Team onboarding course. Here's what happens next before your first Sunday on duty.</p>
+  </div>
+
+  <!-- STATS SUMMARY -->
+  <div class="modules-summary" style="margin-top:28px;">
+    <div class="ms-cell">
+      <div class="ms-num">6</div>
+      <div class="ms-label">Modules done</div>
+    </div>
+    <div class="ms-cell">
+      <div class="ms-num">3</div>
+      <div class="ms-label">Quizzes passed</div>
+    </div>
+    <div class="ms-cell">
+      <div class="ms-num">Ready</div>
+      <div class="ms-label">To shadow</div>
+    </div>
+  </div>
+
+  <!-- NEXT STEPS -->
+  <div class="next-steps">
+    <div style="font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:var(--warm-mid);margin-bottom:4px;">What happens next</div>
+    <h2 style="font-family:var(--font-serif);font-size:22px;font-weight:600;color:var(--dark-brown);margin-bottom:20px;">Your next steps</h2>
+
+    <div class="next-step-card">
+      <div class="step-icon active-icon">📬</div>
+      <div>
+        <div class="ns-title">The Lead will be in touch</div>
+        <div class="ns-desc">Now that you've completed the course, the Capture Team Lead will reach out to organise your shadow Sunday and get you added to Planning Center.</div>
+      </div>
+    </div>
+
+    <div class="next-step-card">
+      <div class="step-icon">👁️</div>
+      <div>
+        <div class="ns-title">Your shadow Sunday</div>
+        <div class="ns-desc">You'll be paired with an experienced team member for at least one Sunday to observe, shoot alongside, and ask questions in real time. No pressure — this is purely a learning experience.</div>
+      </div>
+    </div>
+
+    <div class="next-step-card">
+      <div class="step-icon">📅</div>
+      <div>
+        <div class="ns-title">Added to Planning Center</div>
+        <div class="ns-desc">Once you and the Lead feel ready, you'll be rostered onto Planning Center and start serving. Remember to block out any unavailable dates two months in advance so the Lead can plan accordingly.</div>
+      </div>
+    </div>
+
+    <div class="next-step-card">
+      <div class="step-icon">📱</div>
+      <div>
+        <div class="ns-title">Join the team group chat</div>
+        <div class="ns-desc">The Lead will add you to the Capture Team group chat — this is where reminders, shot list previews, schedule changes, and team updates are shared. Make sure your notifications are on.</div>
+      </div>
+    </div>
+
+    <div class="next-step-card">
+      <div class="step-icon">🌱</div>
+      <div>
+        <div class="ns-title">Grow at your own pace</div>
+        <div class="ns-desc">As you get more comfortable, there are opportunities to deepen your involvement — from learning Lightroom editing to eventually leading a Sunday shoot. Let the Lead know where you'd like to grow and they'll support you.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING NOTE -->
+  <div class="closing-note">
+    <p>We're genuinely so glad you're here. Every photo you take is a small act of service — and over time, those moments add up to something beautiful. We can't wait to serve with you.</p>
+    <div class="closing-sig">— The HTBB Capture Team</div>
+  </div>
+
+  <!-- ACTION BUTTONS -->
+  <div class="action-row">
+    <a class="btn-full" href="CT_01_Homepage.html">← Back to course home</a>
+    <a class="btn-full btn-full-outline" href="CT_02_Module1.html">Review from the beginning</a>
+  </div>
+
+  <div style="height:20px"></div>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      markComplete(6);
+    });
+  </script>
+</body>
+</html>
