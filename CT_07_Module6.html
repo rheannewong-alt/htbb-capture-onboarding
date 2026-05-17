@@ -121,64 +121,88 @@
     <h2>Frequently asked questions</h2>
     <p style="margin-bottom:20px">The questions every new volunteer asks — answered.</p>
 
-    <div class="faq-list">
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">Do I need professional experience to join the Capture Team?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">No. We welcome photographers at all levels — from beginners to professionals. What matters most is a willing heart, a desire to serve, and a willingness to learn. The team will support you as you grow.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">What if I don't have my own camera?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">No problem — the church provides a Sony Alpha Mark II for volunteers to use. Collect it from the Production booth before the service and return it to the same place after.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">How many Sundays a month will I be rostered on?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">This depends on the size of the team and your availability. Typically, volunteers serve once or twice a month. The Lead will work with your schedule — just be upfront about your availability when you join.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">What if I get a bad batch of photos on a Sunday?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">It happens to everyone. Don't stress about it — talk to the Lead, review what happened together, and use it as a learning moment. The team is here to help you grow, not to judge the output of any single Sunday.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">Can I post HTBB photos on my personal Instagram?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">Yes — you're welcome to share your own photos on your personal accounts. We'd love to see them. Just make sure the photos have been through the editing process first (no raw unedited files) and tag @HTBBChurch where appropriate.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">What do I do if I'm running late on a Sunday?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">Message the Sunday Lead as early as possible. Don't just show up late without warning — the team plans coverage based on how many photographers are present, and an early heads-up makes a big difference.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">Who do I contact if I have questions after completing this course?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">Reach out to the Capture Team Lead directly — they're your first point of contact for anything. You can also post in the team group chat. We're a friendly bunch, so never feel like a question is too small to ask.</div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-q">
-          <span class="faq-q-text">Do I need to attend every service or just the ones I'm rostered for?</span>
-          <i class="faq-icon">+</i>
-        </button>
-        <div class="faq-a">You only need to be on duty for the Sundays you're rostered on. You're absolutely welcome to attend other services as a regular congregation member — just leave the camera at home on those days.</div>
-      </div>
-    </div>
+    <style>
+      details.faq-item { border-bottom: 0.5px solid var(--rule); }
+      details.faq-item:first-of-type { border-top: 0.5px solid var(--rule); }
+      details.faq-item summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        padding: 16px 0;
+        cursor: pointer;
+        list-style: none;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--dark-brown);
+        line-height: 1.5;
+      }
+      details.faq-item summary::-webkit-details-marker { display: none; }
+      details.faq-item summary::after {
+        content: '+';
+        font-size: 18px;
+        color: var(--warm-mid);
+        flex-shrink: 0;
+        transition: transform 0.2s;
+        line-height: 1;
+      }
+      details.faq-item[open] summary::after {
+        transform: rotate(45deg);
+      }
+      details.faq-item .faq-answer {
+        font-size: 12px;
+        line-height: 1.75;
+        color: var(--warm-brown);
+        font-weight: 300;
+        padding-bottom: 16px;
+      }
+    </style>
+
+    <details class="faq-item">
+      <summary>Do I need professional experience to join the Capture Team?</summary>
+      <div class="faq-answer">No. We welcome photographers at all levels — from beginners to professionals. What matters most is a willing heart, a desire to serve, and a willingness to learn. The team will support you as you grow.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What if I don't have my own camera?</summary>
+      <div class="faq-answer">No problem — the church provides a Sony Alpha Mark II for volunteers to use. Collect it from the Production booth before the service and return it to the same place after.</div>
+    </details>
+    <details class="faq-item">
+      <summary>How many Sundays a month will I be rostered on?</summary>
+      <div class="faq-answer">This depends on the size of the team and your availability. Typically, volunteers serve once or twice a month. The Lead will work with your schedule — just be upfront about your availability when you join.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What if I get a bad batch of photos on a Sunday?</summary>
+      <div class="faq-answer">It happens to everyone. Don't stress about it — talk to the Lead, review what happened together, and use it as a learning moment. The team is here to help you grow, not to judge the output of any single Sunday.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Can I post HTBB photos on my personal Instagram?</summary>
+      <div class="faq-answer">Yes — you're welcome to share your own photos on your personal accounts. We'd love to see them. Just make sure the photos have been through the editing process first (no raw unedited files) and tag @HTBBChurch where appropriate.</div>
+    </details>
+    <details class="faq-item">
+      <summary>What do I do if I'm running late on a Sunday?</summary>
+      <div class="faq-answer">Message the Sunday Lead as early as possible. Don't just show up late without warning — the team plans coverage based on how many photographers are present, and an early heads-up makes a big difference.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Who do I contact if I have questions after completing this course?</summary>
+      <div class="faq-answer">Reach out to the Capture Team Lead directly — they're your first point of contact for anything. You can also post in the team group chat. We're a friendly bunch, so never feel like a question is too small to ask.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Do I need to attend every service or just the ones I'm rostered for?</summary>
+      <div class="faq-answer">You only need to be on duty for the Sundays you're rostered on. You're absolutely welcome to attend other services as a regular congregation member — just leave the camera at home on those days.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Will training be provided?</summary>
+      <div class="faq-answer">Yes — training will be provided. There are also opportunities to connect with the team through photo-based socials. You won't be thrown in the deep end.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Is phone photography acceptable?</summary>
+      <div class="faq-answer">Not at the moment. We require all photos to be taken with a professional camera — either the church-provided Sony A7 II or your own professional gear.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Are there prerequisites to serving on the team?</summary>
+      <div class="faq-answer">None at all. All you need is a passion to serve and a willingness to learn. Everyone is welcome.</div>
+    </details>
+
   </div>
 
   <!-- QUIZ -->
